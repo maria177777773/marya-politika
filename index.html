@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="ru"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Политика данных Марьи</title>
+<meta name="description" content="Черновик политики обработки персональных данных для сайта Марьи: поля для заполнения и вопросы к юристу.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://maria177777773.github.io/marya-politika/">
+<meta property="og:site_name" content="Сайт Марьи">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Политика обработки данных: образец">
+<meta property="og:description" content="Черновик политики обработки персональных данных для сайта Марьи: поля для заполнения и вопросы к юристу.">
+<meta property="og:image" content="https://maria177777773.github.io/marya-politika/og.jpg?v=20261106">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="Политика обработки данных, образец для сайта Марьи">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://maria177777773.github.io/marya-politika/og.jpg?v=20261106">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500&family=Manrope:wght@400;500;700&display=swap&subset=cyrillic">
+<style>
+html,body{margin:0}
+/* Макет: одна колонка документа, номер пункта вынесен на левое поле. Палитра и шрифты взяты с сайта baikalfeya888.ru, тема одна, как на сайте. */
+:root {
+  color-scheme: dark;
+  --bg: #101218;
+  --bg2: #16191f;
+  --bg3: #1c2027;
+  --cream: #eef4f7;
+  --silver: #c5d4dd;
+  --silver-dim: #8b97a0;
+  --accent: #7fb0c8;
+  --gold: #d9b87a;
+  --line: #2a3038;
+  --disp: 'Unbounded', system-ui, sans-serif;
+  --body: 'Manrope', system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg);
+  color: var(--silver);
+  font: 400 1.0625rem/1.65 var(--body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.page {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding-block: 3rem 4.5rem;
+  display: grid;
+  gap: 2.75rem;
+}
+h1, h2, h3 { font-family: var(--disp); font-weight: 500; color: var(--cream); margin: 0; text-wrap: balance; }
+h1 { font-size: clamp(1.45rem, 4.4vw, 2.2rem); line-height: 1.25; }
+h2 { font-size: 1.0625rem; line-height: 1.4; }
+h3 { font-size: 1.0625rem; line-height: 1.4; }
+p, ul { margin: 0; }
+a { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.fill {
+  background: rgba(217, 184, 122, .16);
+  color: var(--gold);
+  border-radius: 3px;
+  padding: .05em .3em;
+  font-weight: 500;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.draft {
+  background: var(--bg3);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  color: var(--cream);
+  font-size: 1rem;
+}
+.head { display: grid; gap: .9rem; }
+.meta { color: var(--silver-dim); font-size: .9375rem; }
+
+.policy { display: grid; gap: 2.25rem; }
+.clause {
+  display: grid;
+  grid-template-columns: 2.75rem minmax(0, 1fr);
+  column-gap: .75rem;
+}
+.num {
+  font-family: var(--disp);
+  font-size: 1.0625rem;
+  line-height: 1.4;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+.text { display: grid; gap: .8rem; min-width: 0; }
+.text ul { padding-left: 1.15rem; display: grid; gap: .4rem; }
+
+.rows { display: grid; border-top: 1px solid var(--line); }
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: .75rem;
+  padding-block: .8rem;
+  border-bottom: 1px solid var(--line);
+  font-size: .9844rem;
+  line-height: 1.5;
+}
+.row.top {
+  color: var(--silver-dim);
+  font-size: .875rem;
+  letter-spacing: .02em;
+  padding-block: .55rem;
+}
+.lbl { display: none; color: var(--silver-dim); font-size: .875rem; }
+
+.before {
+  background: var(--bg2);
+  border-radius: 6px;
+  padding: 1.5rem 1.25rem;
+  display: grid;
+  gap: 1.75rem;
+}
+.group { display: grid; gap: .8rem; }
+.group ol, .group ul { margin: 0; padding-left: 1.25rem; display: grid; gap: .65rem; }
+.group strong { color: var(--cream); font-weight: 700; }
+
+@media (max-width: 560px) {
+  .clause { grid-template-columns: minmax(0, 1fr); row-gap: .35rem; }
+  .row { grid-template-columns: minmax(0, 1fr); gap: .5rem; }
+  .row.top { display: none; }
+  .lbl { display: block; }
+}
+</style>
+</head><body>
+
+<main class="page">
+  <header class="head">
+    <h1>Политика обработки персональных данных</h1>
+    <p class="meta">Сайт baikalfeya888.ru. Редакция от <span class="fill">дата публикации</span></p>
+  </header>
+
+  <p class="draft">Это образец, на сайте его пока нет. Золотым отмечено то, что заполняет или подтверждает Марья. Юрист смотрит текст до публикации.</p>
+
+  <article class="policy">
+    <section class="clause">
+      <div class="num">1</div>
+      <div class="text">
+        <h2>Кто обрабатывает данные</h2>
+        <p>Оператор персональных данных: <span class="fill">ФИО полностью</span>, <span class="fill">ИП или самозанятая</span>, ИНН <span class="fill">номер</span>, <span class="fill">ОГРНИП, если есть ИП</span>.</p>
+        <p>Адрес для обращений: <span class="fill">почтовый адрес</span>, <span class="fill">электронная почта</span>.</p>
+        <p>Политика действует для сайта baikalfeya888.ru и для переписки, которую человек начинает, перейдя с этого сайта.</p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="num">2</div>
+      <div class="text">
+        <h2>Что получает сайт</h2>
+        <p>На сайте нет форм, полей для контактов и личного кабинета. Кнопки «Записаться» открывают чат в Telegram или Max либо набор номера. Имя и телефон попадают к Оператору, только когда человек сам написал или позвонил.</p>
+        <p>Сайт не использует счётчики аналитики и не ставит собственные куки.</p>
+        <p>При открытии страницы браузер передаёт IP-адрес и сведения о браузере этим сервисам:</p>
+        <ul>
+          <li>Timeweb, Россия: размещение сайта.</li>
+          <li>Google Fonts, Google LLC, США: шрифты сайта.</li>
+          <li>cdnjs, Cloudflare, Inc., США: скрипты анимации в мобильной версии.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="num">3</div>
+      <div class="text">
+        <h2>Какие данные, зачем и на каком основании</h2>
+        <div class="rows">
+          <div class="row top"><div>Данные</div><div>Цель</div><div>Основание</div></div>
+          <div class="row">
+            <div>Имя или ник, телефон, аккаунт в Telegram или Max, текст переписки</div>
+            <div><span class="lbl">Цель</span>Ответить на обращение, записать на услугу и оказать её</div>
+            <div><span class="lbl">Основание</span>Договор об оказании услуг, который человек хочет заключить или заключил</div>
+          </div>
+          <div class="row">
+            <div><span class="fill">Что нужно для оплаты: например, имя плательщика и сумма</span></div>
+            <div><span class="lbl">Цель</span>Принять оплату и выдать чек</div>
+            <div><span class="lbl">Основание</span>Договор и налоговое законодательство</div>
+          </div>
+          <div class="row">
+            <div><span class="fill">Адрес доставки, если амулеты отправляются почтой</span></div>
+            <div><span class="lbl">Цель</span>Отправить заказ</div>
+            <div><span class="lbl">Основание</span>Договор</div>
+          </div>
+          <div class="row">
+            <div>Текст отзыва и снимок переписки. Имя при публикации меняется</div>
+            <div><span class="lbl">Цель</span>Показать отзыв на сайте</div>
+            <div><span class="lbl">Основание</span>Отдельное согласие автора отзыва</div>
+          </div>
+        </div>
+        <p><span class="fill">Рекламные рассылки Оператор не ведёт. Если рассылка появится, Оператор отправит рекламу только тем, кто заранее дал на неё отдельное согласие. Согласие можно отозвать в любой момент.</span></p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="num">4</div>
+      <div class="text">
+        <h2>Здоровье, личная жизнь и убеждения</h2>
+        <p>Оператор не просит указывать эти сведения на сайте. Человек сам решает, сообщать ли их в переписке.</p>
+        <p><span class="fill">Если такие сведения нужны для работы, Оператор сначала получает письменное согласие человека.</span></p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="num">5</div>
+      <div class="text">
+        <h2>Как данные хранятся и защищаются</h2>
+        <p>Оператор собирает, записывает, хранит, использует, уточняет и удаляет данные вручную и с помощью компьютера и телефона.</p>
+        <p>Записи о клиентах хранятся в базах на территории России: <span class="fill">где именно Марья их ведёт</span>. Переписка также хранится на серверах Telegram и Max по правилам этих сервисов.</p>
+        <p>Доступ к данным есть у Оператора и <span class="fill">помощников, если они есть</span>. Устройства и аккаунты защищены паролем.</p>
+        <p>Срок хранения: <span class="fill">например, 3 года после последнего обращения</span>. Документы об оплате хранятся в сроки, установленные законом.</p>
+        <p>Оператор не продаёт данные. Государственным органам данные передаются только по основаниям, предусмотренным законом.</p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="num">6</div>
+      <div class="text">
+        <h2>Права человека и сроки ответа</h2>
+        <p>Чтобы воспользоваться правом, напишите на адрес из раздела 1.</p>
+        <ul>
+          <li>Узнать, какие данные есть у Оператора: ответ в течение 10 рабочих дней. Срок можно продлить на 5 рабочих дней, объяснив причину.</li>
+          <li>Исправить неточные данные: в течение 7 рабочих дней.</li>
+          <li>Потребовать прекратить обработку: в течение 10 рабочих дней, если закон не разрешает её продолжить.</li>
+          <li>Отозвать согласие: данные удаляются в течение 30 дней, если их больше не нужно хранить.</li>
+          <li>Подать жалобу в Роскомнадзор или в суд.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="num">7</div>
+      <div class="text">
+        <h2>Изменение политики</h2>
+        <p>Оператор публикует новую редакцию на этой странице и указывает её дату.</p>
+      </div>
+    </section>
+  </article>
+
+  <aside class="before">
+    <div class="group">
+      <h3>Что решить с юристом до публикации</h3>
+      <ol>
+        <li><strong>Сведения о здоровье и личной жизни.</strong> К Марье приходят с запросами про отношения, деньги и тело. Закон разрешает обрабатывать такие сведения по письменному согласию (152-ФЗ, ст. 10). В нём нужны паспортные данные и подпись (ст. 9, ч. 4). Это главный вопрос.</li>
+        <li><strong>Уведомление Роскомнадзора.</strong> Политика его не заменяет (ст. 22). Исключений мало, поэтому уведомление, скорее всего, понадобится.</li>
+        <li><strong>Где лежат записи о клиентах.</strong> Базы должны быть в России (ст. 18, ч. 5). Если клиенты учитываются только в Telegram, это нужно обсудить отдельно.</li>
+        <li><strong>Статус Марьи.</strong> От него зависят реквизиты, налоговые сроки хранения и форма договора.</li>
+      </ol>
+    </div>
+    <div class="group">
+      <h3>Что можно упростить на сайте</h3>
+      <ul>
+        <li>Перенести шрифты и скрипты анимации на сервер сайта. Тогда IP-адрес перестанет уходить в США, и из раздела 2 исчезнут два сервиса. Это бесплатно.</li>
+        <li>Добавить ссылку на политику в подвал обеих версий сайта, мобильной и компьютерной.</li>
+      </ul>
+    </div>
+    <div class="group">
+      <h3>На что опирается текст</h3>
+      <ul>
+        <li><a href="https://sps-ib.ru/npa:rkn_27.07.2017">Рекомендации Роскомнадзора по составлению политики</a>: структура и разделы.</li>
+        <li><a href="https://www.consultant.ru/document/cons_doc_LAW_61801/7aeb0acd5aa76dbc888a07e52ca06a92568c6e96/">152-ФЗ, ст. 20</a> и <a href="https://www.consultant.ru/document/cons_doc_LAW_61801/d3fe43a7c415353b17faab255bc0de92bea127da/">ст. 21</a>: сроки ответа и удаления.</li>
+        <li>Код сайта на 06.11.2026: формы, счётчики, куки и внешние сервисы.</li>
+      </ul>
+    </div>
+  </aside>
+</main>
+</body></html>
